@@ -13,7 +13,7 @@ class HeadsUpViewController: UIViewController {
     @IBOutlet weak var currentCharade: UILabel!
 //    let charadeList = ["Daenarys Targarian", "Jon Snow", "Sansa Stark"]
     
-    let charadeList = [1,2,3,4,5,6,7,8,9,10]
+    let charadeList = [1,2,3,4,5,6,7,8,9,10,11]
     
     override func viewDidLoad() {
         super.viewDidLoad()
