@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_1" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,41 +15,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HeadsUpViewController" customModule="HeadsUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_blue_vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o5h-YD-JhY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St6-F4-8as">
-                                <rect key="frame" x="107" y="198" width="200" height="500"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="F95-jf-tZ5"/>
-                                    <constraint firstAttribute="height" constant="500" id="Rac-bW-7MC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St6-F4-8as">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="70"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="St6-F4-8as" firstAttribute="centerY" secondItem="o5h-YD-JhY" secondAttribute="centerY" id="0sa-hE-9sN"/>
-                            <constraint firstItem="o5h-YD-JhY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7L2-eC-IEB"/>
-                            <constraint firstItem="o5h-YD-JhY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DHB-Xi-xWt"/>
-                            <constraint firstItem="o5h-YD-JhY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HrQ-zK-yxS"/>
-                            <constraint firstAttribute="bottom" secondItem="o5h-YD-JhY" secondAttribute="bottom" id="JTf-LE-shP"/>
-                            <constraint firstItem="St6-F4-8as" firstAttribute="centerX" secondItem="o5h-YD-JhY" secondAttribute="centerX" id="OCx-uq-pEa"/>
+                            <constraint firstItem="St6-F4-8as" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0Hy-BW-8z1"/>
+                            <constraint firstItem="St6-F4-8as" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CSu-yh-eVk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="St6-F4-8as" secondAttribute="bottom" id="NxI-rp-VKI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="St6-F4-8as" secondAttribute="trailing" id="k3E-Dx-eF7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="currentCharade" destination="St6-F4-8as" id="An0-hK-a9k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+            <point key="canvasLocation" x="47.544642857142854" y="20.289855072463769"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="background_blue_vertical" width="1054" height="1940"/>
-    </resources>
 </document>

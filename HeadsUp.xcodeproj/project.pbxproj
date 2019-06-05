@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9D45C85622A7E37300246879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45C85522A7E37300246879 /* AppDelegate.swift */; };
-		9D45C85822A7E37300246879 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45C85722A7E37300246879 /* ViewController.swift */; };
 		9D45C85B22A7E37300246879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45C85922A7E37300246879 /* Main.storyboard */; };
 		9D45C85E22A7E37300246879 /* HeadsUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D45C85C22A7E37300246879 /* HeadsUp.xcdatamodeld */; };
 		9D45C86022A7E37400246879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45C85F22A7E37400246879 /* Assets.xcassets */; };
 		9D45C86322A7E37400246879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45C86122A7E37400246879 /* LaunchScreen.storyboard */; };
 		9D45C86E22A7E37400246879 /* HeadsUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45C86D22A7E37400246879 /* HeadsUpTests.swift */; };
 		9D45C87922A7E37400246879 /* HeadsUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45C87822A7E37400246879 /* HeadsUpUITests.swift */; };
+		9D45C88822A7F65D00246879 /* HeadsUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45C88722A7F65D00246879 /* HeadsUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		9D45C85222A7E37300246879 /* HeadsUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadsUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D45C85522A7E37300246879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D45C85722A7E37300246879 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D45C85A22A7E37300246879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D45C85D22A7E37300246879 /* HeadsUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeadsUp.xcdatamodel; sourceTree = "<group>"; };
 		9D45C85F22A7E37400246879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		9D45C87422A7E37400246879 /* HeadsUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadsUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D45C87822A7E37400246879 /* HeadsUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsUpUITests.swift; sourceTree = "<group>"; };
 		9D45C87A22A7E37400246879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D45C88722A7F65D00246879 /* HeadsUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				9D45C85522A7E37300246879 /* AppDelegate.swift */,
-				9D45C85722A7E37300246879 /* ViewController.swift */,
 				9D45C85922A7E37300246879 /* Main.storyboard */,
 				9D45C85F22A7E37400246879 /* Assets.xcassets */,
 				9D45C86122A7E37400246879 /* LaunchScreen.storyboard */,
 				9D45C86422A7E37400246879 /* Info.plist */,
 				9D45C85C22A7E37300246879 /* HeadsUp.xcdatamodeld */,
+				9D45C88722A7F65D00246879 /* HeadsUpViewController.swift */,
 			);
 			path = HeadsUp;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D45C88822A7F65D00246879 /* HeadsUpViewController.swift in Sources */,
 				9D45C85E22A7E37300246879 /* HeadsUp.xcdatamodeld in Sources */,
-				9D45C85822A7E37300246879 /* ViewController.swift in Sources */,
 				9D45C85622A7E37300246879 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
